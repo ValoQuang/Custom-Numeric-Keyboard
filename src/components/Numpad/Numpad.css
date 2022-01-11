@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Montserrat&display=swap');;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: none;
+}
+
+body {
+  background-color: rgb(236, 218, 195);
+  display: grid;
+  place-content: center;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  font-size: 2rem;
+}
+
+.container {
+    height: 80vh;
+    width:50vh;
+    background: linear-gradient(#91c8c8,#425c75);
+    border-radius: 1rem;
+    padding-right: 1rem;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    margin: 10px;
+    height: 100%;
+    width:100%;
+    gap: 20px;
+}
+
+.topscreen {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.screen {
+    display: grid;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 3px;
+}
+
+.btn {
+    display: grid;
+    margin: 1px;
+    place-content: center;
+    background-color: rgb(243, 237, 237);
+    border-radius: 10px;
+    color: rgb(63, 61, 61);
+    cursor: pointer;
+    border-style: none;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.btnNext {
+    display: grid;
+    margin: 1px;
+    place-content: center;
+    background-color: rgb(243, 237, 237);
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: rgb(241, 128, 87);
+    border-style: none;
+}
+
+.btn:hover {
+    background-color: gray;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #f8f8f8;
+  color: #575656;
+}
+
+
+.content {
+    color: white;
+}
