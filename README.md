@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-[DEMO LINK](https://github.com/facebook/create-react-app). <br/>
+[DEMO LINK](https://smartum-excerise.netlify.app/). <br/>
 ![Capture1](https://user-images.githubusercontent.com/45687913/148896266-cabd4ebb-1ea5-4429-ad95-8ccb829f53f1.PNG)<br/>
 ![Capture1](https://user-images.githubusercontent.com/45687913/148904392-cbc51c63-ecab-4a87-9596-c987e51323d9.PNG)
 
