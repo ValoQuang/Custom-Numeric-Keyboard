@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-[DEMO LINK](https://github.com/facebook/create-react-app).
+[DEMO LINK](https://github.com/facebook/create-react-app). <br/>
 ![Capture1](https://user-images.githubusercontent.com/45687913/148896266-cabd4ebb-1ea5-4429-ad95-8ccb829f53f1.PNG)
 
 
