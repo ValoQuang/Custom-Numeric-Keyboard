@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Montserrat&display=swap');;
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Montserrat&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  -webkit-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-app-region: none;
 }
 
 body {
@@ -18,85 +15,105 @@ body {
 }
 
 .container {
-    height: 80vh;
-    width:50vh;
-    background: linear-gradient(#91c8c8,#425c75);
-    border-radius: 1rem;
-    padding-right: 1rem;
-    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  height: 80vh;
+  width: 50vh;
+  background: linear-gradient(#91c8c8, #425c75);
+  border-radius: 1rem;
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  padding: 10px;
 }
 
 .wrapper {
-    display: grid;
-    grid-template-rows: 2fr 1fr;
-    margin: 10px;
-    height: 100%;
-    width:100%;
-    gap: 20px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  height: 100%;
+  width: 100%;
+  gap: 10px;
 }
 
 .topscreen {
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  gap: 5px;
 }
 
 .screen {
-    display: grid;
-    padding: 5px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-row-gap: 3px;
+  display: grid;
+  padding: 15px;
+  background-color: white;
+  border-radius: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-row-gap: 3px;
 }
 
 .btn {
-    display: grid;
-    margin: 1px;
-    place-content: center;
-    background-color: rgb(243, 237, 237);
-    border-radius: 10px;
-    color: rgb(63, 61, 61);
-    cursor: pointer;
-    border-style: none;
-    font-weight: bold;
-    font-size: 2rem;
+  display: grid;
+  margin: 1px;
+  place-content: center;
+  background-color: white;
+  border-radius: 10px;
+  color: rgb(37, 37, 37);
+  cursor: pointer;
+  border-style: none;
+  font-weight: bold;
+  font-size: 2rem;
+  box-shadow: 5px 5px 3px 0px rgba(228, 226, 226, 0.75);
 }
 
 .btnNext {
-    display: grid;
-    margin: 1px;
-    place-content: center;
-    background-color: rgb(243, 237, 237);
-    border-radius: 10px;
-    color: black;
-    cursor: pointer;
-    font-size: 2rem;
-    background-color: rgb(241, 128, 87);
-    border-style: none;
+  display: grid;
+  margin: 1px;
+  place-content: center;
+  background-color: rgb(243, 237, 237);
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.5rem;
+  background-color: rgb(238, 140, 105);
+  border-style: none;
 }
 
 .btn:hover {
-    background-color: gray;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+  background-color: rgb(235, 232, 232);
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 5px 5px 3px 0px rgba(228, 226, 226, 0.75);
 }
 
 button:disabled,
-button[disabled]{
-  border: 1px solid #999999;
-  background-color: #f8f8f8;
-  color: #575656;
+button[disabled] {
+  border-style: none;
+  background-color: #d8d4d4;
+  color: #ffffff;
+  font-size: 1.5rem;
+  box-shadow: 5px 5px 3px 0px rgba(228, 226, 226, 0.75);
 }
 
-
 .content {
-    color: white;
+  color: white;
+}
+
+.content span {
+  height: 40px;
+  margin-bottom: -4px;
+  width: 2px;
+  background: white;
+  opacity: 0;
+  display: inline-block;
+  animation: blink 0.8s linear infinite alternate;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
